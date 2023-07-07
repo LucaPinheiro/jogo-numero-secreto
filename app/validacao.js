@@ -1,8 +1,6 @@
 function verificaChute(chute) {
-    // transformar para inteiro:
     const numero = parseInt(chute);
 
-    // verifica se é um número válido:
     if (chuteForInvalido(numero)) {
         elementoChute.innerHTML += '<div>Valor inválido</div>';
         return;
@@ -13,7 +11,6 @@ function verificaChute(chute) {
         return;
     }
 
-    // vrifica se acertou:
     if (numero === numeroSecreto) {
         document.body.innerHTML = `
             <h2>Parabéns! Você acertou o número secreto.</h2>
